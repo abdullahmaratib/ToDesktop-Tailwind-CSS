@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM Work
+    </title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body>
+
+   <!-- Navbar -->
+   <nav class="px-6 py-3 items-center justify-between flex bg-white">
+    <div class="flex items-center gap-1">
+
+        <img class="max-w-12 max-h-12  object-cover" 
+        src="./assets/asset 0.png" alt="">
+
+        <span class="text-lg font-medium font-display">ToDesktop</span>
+    </div>
+
+    <div class="text-xl font-semibold lg:hidden" onclick="handleMenu()">
+        <i class="ri-menu-line"></i>
+    </div>
+
+    <div class="hidden lg:flex text-lg font-medium lg:ml-11 text-gray-800 item-center gap-12">
+        <h4 class="font-display hover:text-primary">Pricing</h4>
+        <h4 class="font-display hover:text-primary">Docs</h4>
+        <h4 class="font-display hover:text-primary">Changelog</h4>
+        <h4 class="font-display hover:text-primary">Blog</h4>
+        <h4 class="font-display hover:text-primary">Login</h4>
+    </div>
+
+    <button class="hidden group lg:flex items-center px-4 py-2 gap-2 border border-gray-400 rounded-lg hover:border-gray-800">
+        <img src="./assets/asset 1.svg" alt="">
+        <p class="font-body font-medium">Electron Developer</p>
+        <i class="ri-arrow-right-line text-lg group-hover:translate-x-1 transition"></i>
+    </button>
+
+    <!-- Menu -->
+
+     <div id="close" class="hidden h-screen fixed bg-white inset-0 md:hidden ">
+
+        <div class="flex items-center justify-between px-6 py-3 ">
+
+            <div class="flex items-center gap-1">
+            <img class="max-w-12 max-h-12  object-cover" 
+            src="./assets/asset 0.png" alt="">
+
+            <span class="text-lg font-medium font-display">ToDesktop</span>
+        </div>
+
+            <div class="text-[25px] font-medium text-gray-600" onclick="handleMenu()">
+                <i class="ri-close-line"></i>
+            </div>
+
+     </div>
+
+     <div class="flex flex-col mt-8 text-[17px] px-6 font-medium text-gray-900 ">
+        <h4 class="font-display mb-6 hover:text-primary">Pricing</h4>
+        <h4 class="font-display mb-6 hover:text-primary">Docs</h4>
+        <h4 class="font-display mb-6 hover:text-primary">Changelog</h4>
+        <h4 class="font-display mb-6 hover:text-primary">Blog</h4>
+        <h4 class="font-display hover:text-primary">Login</h4>
+    </div>
+
+    <div class="flex items-center mt-[70px] gap-2 px-6">
+        <img src="./assets/asset 1.svg" alt="">
+        <p class="font-body font-medium text-[17px] text-gray-800">Electron Developer</p>
+
+    </div>
+
+    <div class="absolute bottom-6 right-6 hover:scale-110 transition">
+        <i class="ri-question-answer-fill text-2xl text-white px-[11.3px] py-3 rounded-full bg-primary"></i>
+    </div>
+
+</nav>
+
+
+<!-- Wrapper -->
+<div class="min-h-full bg-gradient-to-br from bg-purple-50 via-orange-50 to-transparent">
+
+    <!-- File Compile -->
+     <div class="hidden pt-24 sm:flex mx-auto sm:text-center gap-5 w-fit ">
+
+        <div class="flex items-center gap-2">
+            <i class="ri-file-code-fill text-gray-500"></i>
+            <p class="text-gray-500 text-[17px]">Code optional</p>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <i class="ri-hand text-gray-500"></i>
+                <p class="text-gray-500 text-[17px]">Drag & drop builder</p>
+             </div>
+
+             <div class="flex items-center gap-2">
+                <i class="ri-window-2-fill text-gray-500"></i>
+                <p class="text-gray-500 text-[17px]">Windows, Mac</p>
+                </div>
+     </div>
+
+     <!-- Hero Section -->
+    <div class="px-6 py-28 flex flex-col sm:py-8 sm:items-center sm:text-center">
+
+        <h1 class="text-5xl sm:text-7xl  font-body md:w-[800px] font-bold leading-none">
+            Web app to desktop app in minutes</h1>
+            <p class="text-xl sm:text-[25px] sm:mt-9 md:w-[700px] leading-snug text-gray-600 mt-6">
+                Take your web app codebase and transform it into a cross platform desktop app with native functionality.</p>
+                <div class="mt-12 gap-4 flex flex-col sm:flex-row ">
+                    <button class="bg-primary px-8 text-white rounded-xl py-[14px] font-bold text-base hover:bg-opacity-90">Download now</button>
+                    <button class="bg-white px-8 text-gray-800 rounded-xl py-[14px] border  border-gray-400 transition font-bold text-base hover:border-gray-600">Read docs</button>
+                </div>
+
+
+                <div class=" mx-auto flex text-center mt-20 items-center gap-2 w-fit">
+
+                    <img class="translate-y-2" src="assets/asset 2.svg" alt="">
+                    <h1 class="uppercase text-[17px] text-bold text-gray-700">Apps powered by ToDesktop</h1>
+                    <img class="-scale-x-100 translate-y-2" src="assets/asset 2.svg" alt="">
+            
+                 </div>
+         </div>
+
+         <div class="h-auto w-full flex overflow-x-hidden flex-col">
+
+            <div id="one" class="w-full flex gap-3 transition-transform ease-linear sm:mt-1 -translate-x-48">
+                
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 3.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 4.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 5.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 6.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 7.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 8.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 9.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 10.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 11.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 12.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 13.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 14.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 15.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 16.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 17.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 18.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 19.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 20.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+
+
+            </div>
+
+            <div id="two" class="w-full flex transition-transform ease-linear -translate-x-36 gap-3 sm:6 mt-4">
+                
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 14.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 12.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 6.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 9.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 20.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 21.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 22.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 23.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 24.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 25.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 26.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 27.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 28.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 29.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 17.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 13.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 10.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 8.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+            <div id="three" class="w-full flex mt-4 sm:hidden transition-transform ease-linear -translate-x-48 gap-3">
+                
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 3.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 23.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 25.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 13.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 15.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 7.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 16.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 5.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 25.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 15.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+                <div class="border border-gray-300 bg-white rounded-xl text-center h-auto w-[98px] md:w-[130px] p-[12px] md:p-[15px]">
+                    <img class="w-[80px] md:w-[94px] px-[10px] md:px-[16px] " src="./assets/asset 4.png" alt="">
+                    <p class="mt-2 text-gray-800 font-medium md:font-semibold text-[12px]  md:text-base">Unbounce</p>
+                </div>
+
+
+
+            </div>
+
+            
+
+         </div>
+
+
+
+         <!-- paid plan -->
+       
+        <div class="px-7 sm:px-32 py-8">
+            <h1 class="text-[42px] mt-10 sm:w-[500px] text-body leading-tight font-semibold">Choose a plan that fits
+                your needs</h1>
+            </div>
+
+<div class="h-[90vh]">
+
+    <div class=" px-7  sm:px-32 flex flex-wrap gap-[30px]">
+
+        <div class="border transition border-gray-300 rounded-xl min-h-[400px] w-full lg:w-[420px] px-7  py-6 mt-[60px]">
+
+            <h1 class="text-[40px] text-body font-semibold">Free</h1>
+            <p class="text-lg mt-1 text-gray-500 leading-tight">For personal use.</p>
+            <h4 class="mt-9 text-[15px] text-gray-500 font-semibold uppercase">Key Features</h4>
+
+            <div class="flex item-center mb-1 mt-4 gap-2">
+                <i class="ri-check-fill text-[22px] mt-[2px] text-gray-600"></i>
+                <p class="text-lg mt-1 text-gray-800">Free for personal use</p>
+            </div>
+
+            <div class="flex item-center mb-1 gap-2">
+                <i class="ri-check-fill text-[22px] mt-[2px] text-gray-600"></i>
+                <p class="text-lg mt-1 text-gray-800">Run app locally</p>
+            </div>
+
+            <div class="flex item-center mb-1 gap-2">
+                <i class="ri-close-line text-[22px] mt-[2px] text-gray-600"></i>
+                <p class="text-lg mt-1 text-gray-800">No Code Signing</p>
+            </div>
+
+            <div class="flex item-center mb-1 gap-2">
+                <i class="ri-close-line text-[22px] mt-[2px] text-gray-600"></i>
+                <p class="text-lg mt-1 text-gray-800">No Native Installers</p>
+            </div>
+            <button class=" py-3 mt-9 text-primary rounded-xl w-full border  border-gray-300 transition font-semibold text-lg hover:border-gray-500">Get Started</button>
+        </div>
+
+        
+        <div class="border transition border-gray-300 rounded-xl min-h-[400px] w-full lg:w-[420px] px-7 py-6 mt-[60px]">
+
+            <h1 class="text-[40px] text-body font-semibold">Essential</h1>
+            <p class="text-lg mt-1 text-gray-500 leading-tight">For simple desktop apps.</p>
+            <h4 class="mt-9 text-[15px] text-gray-500 font-semibold uppercase">Key Features</h4>
+
+            <div class="flex item-center mb-1 mt-4 gap-2">
+                <i class="ri-check-fill text-[22px] mt-[2px] text-gray-600"></i>
+                <p class="text-lg mt-1 text-gray-800">Windows, Mac & Linux</p>
+            </div>
+
+            <div class="flex item-center mb-1 gap-2">
+                <i class="ri-check-fill text-[22px] mt-[2px] text-gray-600"></i>
+                <p class="text-lg mt-1 text-gray-800">Code Signing</p>
+            </div>
+
+            <div class="flex item-center mb-1 gap-2">
+                <i class="ri-check-fill  text-[22px] mt-[2px] text-gray-600"></i>
+                <p class="text-lg mt-1 text-gray-800">Native Installers</p>
+            </div>
+
+            <div class="flex item-center mb-1 gap-2">
+                <i class="ri-check-fill  text-[22px] mt-[2px] text-gray-600"></i>
+                <p class="text-lg mt-1 text-gray-800">Email/chat support</p>
+            </div>
+            <button class=" py-3 mt-9 text-primary rounded-xl w-full border  border-gray-300 transition font-semibold text-lg hover:border-gray-500">Get Started</button>
+        </div>
+
+        
+        <div class="border transition border-gray-300 rounded-xl min-h-[400px] w-full lg:w-[420px] px-7 py-6 mt-[60px]">
+
+            <h1 class="text-[40px] text-body font-semibold">Professional</h1>
+            <p class="text-lg mt-1 text-gray-500 leading-tight">For sophisticated desktop apps.</p>
+            <h4 class="mt-9 text-[15px] text-gray-500 font-semibold uppercase">Everything in Essential Plus</h4>
+
+            <div class="flex item-center mb-1 mt-4 gap-2">
+                <i class="ri-check-fill text-[22px] mt-[2px] text-gray-600"></i>
+                <p class="text-lg mt-1 text-gray-800">Branded Download links</p>
+            </div>
+
+            <div class="flex item-center mb-1 gap-2">
+                <i class="ri-check-fill text-[22px] mt-[2px] text-gray-600"></i>
+                <p class="text-lg mt-1 text-gray-800">Analytics</p>
+            </div>
+
+            <div class="flex item-center mb-1 gap-2">
+                <i class="ri-check-fill  text-[22px] mt-[2px] text-gray-600"></i>
+                <p class="text-lg mt-1 text-gray-800">Access to Plugins</p>
+            </div>
+
+            <div class="flex item-center mb-1 gap-2">
+                <i class="ri-check-fill  text-[22px] mt-[2px] text-gray-600"></i>
+                <p class="text-lg mt-1 text-gray-800">Access to restricted API</p>
+            </div>
+            <button class=" py-3 mt-9 text-white bg-primary rounded-xl w-full font-semibold text-lg hover:opacity-90">Get Started</button>
+        </div>
+
+    </div>
+
+<!-- next -->
+
+  
+
+        </div>
+
+</div>
+
+
+
+
+                    
+
+
+
+
+   
+
+<script src="script.js"></script>
+</body>
+</html>
